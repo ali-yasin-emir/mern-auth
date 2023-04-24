@@ -4,6 +4,7 @@ import Home from './pages/home/Home';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Login from './pages/login/Login';
+import Register from './pages/register/Register';
 function App() {
   const Layout = () => {
     return (
@@ -22,6 +23,7 @@ function App() {
       children: [{ path: '/', element: <Home /> }],
     },
     { path: '/login', element: <Login /> },
+    { path: '/register', element: <Register /> },
   ]);
 
   return <RouterProvider router={router} />;
